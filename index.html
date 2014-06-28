@@ -1,2 +1,425 @@
-Jello Vorld
-<?php include 'head.html' ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Taylor The Developer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Taylor The Developer</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- <img class="img-responsive" src="img/mesm.jpg" alt=""> -->
+                    <div class="intro-text">
+                        <span class="name">About</span>
+                        <hr class="star-light">
+                        <span class="skills">Computer Scientist - Graphic Artist - User Experience Designer - Nerd</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            <br><br>
+             </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>I'm a passionate autodidact and perfectionist. I love learning new things and being challenged. With over half a decade in graphic design experience and several years as a developer, I have a diverse skill set that can benefit any project or challenge!</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>I like to make applications that are not only useful, but intuitive, astetic, and easy to use. Just recently, I've gotten into doing research(which is an interesting contrast from Software Development). Currently, my projects have me working with Computer Vision and Machine Learning. Check out my portfolio to see some of my recent work or research!  </p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <!-- <a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Download Theme
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/acuity.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/pickup.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/computervision.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+              <!--   <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/a.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/b.png" class="img-responsive" alt="" />
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/c.png" class="img-responsive" alt="" />
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="success" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Hire/Contact Me</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="row" >
+                        <div class="col-lg-12 text-center">
+                        <p> Contact me via email: </p>
+                            <h3>TaylorTheDeveloper@gmail.com</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <!--  -->
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li><a href="https://www.facebook.com/taytaybrockhoeft" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://plus.google.com/u/0/+TaylorTheDeveloper/about" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                             <li><a href="http://taytayb.deviantart.com/" class="btn-social btn-outline"><i class="fa fa-fw fa-deviantart"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/profile/view?id=172987101" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="https://github.com/TaylorTheDeveloper" class="btn-social btn-outline"><i class="fa fa-fw fa-git"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                       <!--   -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; 2014 - Taylor Brockhoeft
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Acuity Vision Training</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/acuity.png" class="img-responsive img-centered" alt="">
+                            <p>Acuity is a windows application that uses the kinect for it's interface. Acuity was designed to help improve hand eye cordination in athletes through various proven and pattented vision tests and training, but could be used by anyone to increase thier feild of vision. Hence the name, Acuity. Currently, the application is in Beta.</p>
+                            <p> As per my involvment on this project, I designed the user interface and worked with the testers to help create a comfortable user experience for training with this software.  </p>
+                            <ul class="list-inline item-details">
+                                <li>Date: <strong><a href="#">October 2013 - May 2014</a></strong>
+                                </li>
+                                <li>Service: <strong><a href="#">User Experience Design</a></strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>PickUp Sports </h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/pickup.png" class="img-responsive img-centered" alt="">
+                            <p>PickUp Sports was part of my senior Software Engingeering Project at Florida State Univeristy. The goal of PickUp was to establish an online system that various leauges, intramural sports teams, or just every day joe's could utilize to organize practices and games. Currently, I'm no longer offically working on this project, but may pick it back up in the future. This was my first web application so it opened up a lot of new doors for me. </p>
+                            <p>I was the project manager for my group on this project. I put a significant amount of work into both the back end and front end for this application. </p>
+
+                            <ul class="list-inline item-details">
+                                <li>Date: <strong><a href="#">Janurary 2014 - April 2014</a></strong>
+                                </li>
+                                <li>Service: <strong><a href="#">Web Development</a></strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Computer Vision Research</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/computervision.png" class="img-responsive img-centered" alt="">
+                            <p>Currently, I'm working for a company developing a special kind of application that utilizes a lot of methods and techniques from the OpenCV library that works accross multiple platforms. Right now, I'm researching methods to generate highly accurate object classifiers. Right now, my focus is on Haar-like features, LBP (Local Binary Patterns), and Geometric Ratio Analysis. In addition to this, I'm also trying to find ways to better develop and deploy computationaly heavy process like OCR (Optical Character Recognition) and Realtime Image Processing on mobile or limited memory systems.</p>
+                            <ul class="list-inline item-details">
+                                <li>Date: <strong><a href="#">May 2014 - Currently</a></strong>
+                                </li>
+                                <li>Service: <strong><a href="#">Research</a></strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/a.png" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Date: <strong><a href="#">April 2014</a></strong>
+                                </li>
+                                <li>Service: <strong><a href="#">Web Development</a></strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/b.png" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Date: <strong><a href="#">April 2014</a></strong>
+                                </li>
+                                <li>Service: <strong><a href="#">Web Development</a></strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Title</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/c.png" class="img-responsive img-centered" alt="">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>Date: <strong><a href="#">April 2014</a></strong>
+                                </li>
+                                <li>Service: <strong><a href="#">Web Development</a></strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/mainpage.js"></script>
+
+</body>
+
+</html>
