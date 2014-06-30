@@ -61,7 +61,7 @@ body {
     waterfaucet.gif
     waterrefelctions.gif
     */
-  background: url('cines/sunset-beachrocks.gif') no-repeat center center;
+  background: url('cines/waterrefelctions.gif') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -69,10 +69,16 @@ body {
   z-index:-1;
   opacity:1;
   -webkit-animation: imageIntro 3s;
+  /*Blur - good for some images*/
+/*  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);*/
 }
 #intro {
   position:fixed;
-  top:16%;
+  top:40%;
   left:25%;
   width:750px;
   font-weight: bold;
