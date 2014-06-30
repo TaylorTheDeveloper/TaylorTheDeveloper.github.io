@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,900,700italic,900italic);
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+  transition:all 0.5s;
+  font-family:Roboto;
+}
+body {
+  height:100%;
+  width:100%;
+  margin:0px;
+}
+.image {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+    /*background: url("http://lorempixel.com/1600/1200/nature/") no-repeat center center; */
+    /*
+    beer.gif
+    blahblahblah.gif
+    bicycle.gif
+    canyon.gif
+    city-night.gif
+    crystalball.gif
+    coolingoff.gif
+    cat_0001.gif
+    chicago.gif
+    cigars.gif
+    espresso.gif
+    flower_focus.gif
+    forest-river.gif
+    gitbooze.gif
+    girl_hammock.gif
+    hellobeautiful.gif
+    gardenstate.gif
+    hotspring.gif
+    icyrain.gif
+    inception_movieposters.gif
+    intherain.gif
+    jurasic park.gif
+    keyandpeel.gif
+    nacholibre.gif
+    oldspice_power.gif
+    rain.gif
+    reflections_001.gif
+    reflections_002.gif
+    romantic_bank.gif
+    scenicpool.gif
+    shootingstar.gif
+    singlebird.gif
+    skrim_docks.gif
+    sparks.gif
+    subway.gif
+    sunset-beachrocks.gif
+    train_001.gif
+    umbrella.gif
+    waterfall.gif
+    waterfaucet.gif
+    waterrefelctions.gif
+    */
+  background: url('cines/sunset-beachrocks.gif') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index:-1;
+  opacity:1;
+  -webkit-animation: imageIntro 3s;
+}
+#intro {
+  position:fixed;
+  top:16%;
+  left:25%;
+  width:750px;
+  font-weight: bold;
+  margin: auto;
+  margin-top:-40px;
+  padding: 50px;
+  text-align:center;
+  color:#ffffff;
+  background-color: rgba(35,35,35, .4);
+  font-size:40px;
+  font-weight:100;
+}
+.footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  color:#ffffff;
+  font-size:12px;
+}
+.footer a {
+  color:#ffffff;
+}
