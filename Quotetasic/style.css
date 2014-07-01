@@ -11,6 +11,10 @@ body {
   width:100%;
   margin:0px;
 }
+cite{
+  font-size: .8em;
+  float: right;
+}
 .image {
   position:fixed;
   top:0px;

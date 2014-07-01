@@ -8,13 +8,36 @@
 <body>
 
 <div id="intro">
-  If any civilization is to survive, it is the morality of altruism that men have to reject.
-  - Ayn Rand
-  
+<blockquote>
+  <p><div id="quote"></div> </p>
+</blockquote>
+<cite><div id="cite"></div></cite>
+  <div id="countdown"></div>
 </div>
 <div class="image"></div>
 
 
 </body>
 </html>
+
+<script>
+var index = 1;
+var quotes = [{
+    "quote" : "It's only after you've lost everything that you're free to do anything.",
+    "author" : "Chuck Palahniuk",
+    "boxx" : "50",
+    "boxy" : "65",
+    "image" : "fightclub_01.gif"
+},
+{
+    "quote" : "If you realized how powerful your thoughts are, you would never think a negative thought.",
+    "author" : "P. Pilgrim",
+    "boxx" : "5",
+    "boxy" : "15",
+    "image" : "sparks.gif"
+}];
+
+document.getElementById("quote").innerHTML = quotes[index].quote;
+document.getElementById("cite").innerHTML = quotes[index].author;
+</script>
 
