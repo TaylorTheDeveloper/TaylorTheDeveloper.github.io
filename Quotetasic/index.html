@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <link href="style.css" rel="stylesheet">
+
 <script type="text/javascript" src="countdown.js"></script>
 </head>
 
@@ -25,19 +26,23 @@ var index = 1;
 var quotes = [{
     "quote" : "It's only after you've lost everything that you're free to do anything.",
     "author" : "Chuck Palahniuk",
-    "boxx" : "50",
-    "boxy" : "65",
+    "boxx" : "50%",
+    "boxy" : "65%",
     "image" : "fightclub_01.gif"
 },
 {
     "quote" : "If you realized how powerful your thoughts are, you would never think a negative thought.",
     "author" : "P. Pilgrim",
-    "boxx" : "5",
-    "boxy" : "15",
+    "boxx" : "5%",
+    "boxy" : "15%",
     "image" : "sparks.gif"
 }];
 
 document.getElementById("quote").innerHTML = quotes[index].quote;
 document.getElementById("cite").innerHTML = quotes[index].author;
+document.getElementById("intro").style.top= quotes[index].boxy;
+document.getElementById("intro").style.left=quotes[index].boxx;
+// document.getElementById('image').style.background = "url(quotes[index].image) no-repeat center center";
+
 </script>
 
