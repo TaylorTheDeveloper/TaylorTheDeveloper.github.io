@@ -9,7 +9,14 @@
 body {
   height:100%;
   width:100%;
-  margin:0px;
+  margin:50%;
+  background: url('cines/waterrefelctions.gif') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index:-1;
+  opacity:1;
 }
 cite{
   font-size: .8em;
@@ -65,14 +72,13 @@ cite{
     waterfaucet.gif
     waterrefelctions.gif
     */
-  background: url('cines/waterrefelctions.gif') no-repeat center center;
+/*  background: url('cines/waterrefelctions.gif') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   z-index:-1;
-  opacity:1;
-  -webkit-animation: imageIntro 3s;
+  opacity:1;*/
   /*Blur - good for some images*/
 /*  -webkit-filter: blur(10px);
   -moz-filter: blur(10px);
@@ -88,7 +94,7 @@ cite{
   font-weight: bold;
   margin: auto;
   margin-top:-40px;
-  padding: 50px;
+  padding: 10px;
   text-align:center;
   color:#ffffff;
   background-color: rgba(35,35,35, .4);
@@ -105,3 +111,22 @@ cite{
 .footer a {
   color:#ffffff;
 }
+/*.ribbon {
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  opacity:.5;
+  left: 10px;
+  top: 10px;
+
+}
+.ribbon a {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 100% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 1px 0;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+}*/

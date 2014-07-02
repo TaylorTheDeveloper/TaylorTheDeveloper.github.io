@@ -16,6 +16,9 @@
   <div id="countdown"></div>
 </div>
 <div class="image"></div>
+<!-- <div class="ribbon">
+  <a href="#">Quotetasic</a>
+</div> -->
 
 
 </body>
@@ -23,61 +26,60 @@
 
 <script>
 
-var index=Math.floor(Math.random()*3)
 var quotes = [{
     "quote" : "C'est en faisant n'importe quoi qu'on devient n'importe qui",
     "author" : "Remi Gaillard",
     "boxx" : "25%",
     "boxy" : "40%",
-    "image" : "?.gif"
+    "image" : "oldspice_power.gif"
 },{
     "quote" : "If you tell the truth, you don't have to remember anything.",
     "author" : "Mark Twain",
     "boxx" : "25%",
     "boxy" : "40%",
-    "image" : "?.gif"
+    "image" : "waterfaucet.gif"
 },{
     "quote" : "Those who dream by day are cognizant of many things that escape those who dream only at night.",
     "author" : "Edgar Allen Poe",
-    "boxx" : "25%",
-    "boxy" : "40%",
-    "image" : "?.gif"
+    "boxx" : "3%",
+    "boxy" : "10%",
+    "image" : "umbrella.gif"
 },{
     "quote" : "The scientific man does not aim at an immediate result. He does not expect that his advanced ideas will be readily taken up. His work is like that of the planter - for the future. His duty is to lay the foundation for those who are to come, and point the way.",
     "author" : "Nikola Tesla",
-    "boxx" : "25%",
-    "boxy" : "40%",
-    "image" : "?.gif"
+    "boxx" : "48%",
+    "boxy" : "20%",
+    "image" : "shootingstar.gif"
 },{
-    "quote" : "I'm just a musical prostitute, my dear..",
+    "quote" : "I'm just a musical prostitute, my dear.",
     "author" : "Freddie Mercury",
-    "boxx" : "25%",
+    "boxx" : "2%",
     "boxy" : "40%",
-    "image" : "?.gif"
+    "image" : "bicycle.gif"
 },{
     "quote" : "Achievement of your happiness is the only moral purpose of your life, and that happiness, not pain or mindless self-indulgence, is the proof of your moral integrity, since it is the proof and the result of your loyalty to the achievement of your values.",
     "author" : "Ayn Rand",
-    "boxx" : "25%",
-    "boxy" : "40%",
-    "image" : "?.gif"
+    "boxx" : "50%",
+    "boxy" : "8%",
+    "image" : "waterfall.gif"
 },{
     "quote" : "To say 'I love you' one must first be able to say the 'I.'",
     "author" : "Ayn Rand",
     "boxx" : "25%",
     "boxy" : "40%",
-    "image" : "?.gif"
+    "image" : "flower_focus.gif"
 },{
     "quote" : "Cloning represents a very clear, powerful, and immediate example in which we are in danger of turning procreation into manufacture.",
     "author" : "Leon Kass",
-    "boxx" : "25%",
-    "boxy" : "40%",
-    "image" : "?.gif"
+    "boxx" : "2%",
+    "boxy" : "30%",
+    "image" : "cat_0001.gif"
 },{
     "quote" : "If any civilization is to survive, it is the morality of altruism that men have to reject.",
     "author" : "Ayn Rand",
     "boxx" : "25%",
     "boxy" : "40%",
-    "image" : "waterreflections.gif"
+    "image" : "waterrefelctions.gif"
 },{
     "quote" : "It's only after you've lost everything that you're free to do anything.",
     "author" : "Chuck Palahniuk",
@@ -87,15 +89,15 @@ var quotes = [{
 },{
     "quote" : "He who controls others may be powerful, but he who has mastered himself is mightier still.",
     "author" : "Lao Tzu",
-    "boxx" : "50%",
-    "boxy" : "65%",
-    "image" : "?.gif"
+    "boxx" : "25%",
+    "boxy" : "30%",
+    "image" : "hotspring.gif"
 },{
     "quote" : "Truth is, everybody is going to hurt you; you just gotta find the ones worth suffering for.",
     "author" : "Bob Marley",
-    "boxx" : "50%",
-    "boxy" : "65%",
-    "image" : "?.gif"
+    "boxx" : "45%",
+    "boxy" : "58%",
+    "image" : "intherain.gif"
 },{
     "quote" : "If you realized how powerful your thoughts are, you would never think a negative thought.",
     "author" : "P. Pilgrim",
@@ -104,11 +106,13 @@ var quotes = [{
     "image" : "sparks.gif"
 }];
 
+
+var index=Math.floor(Math.random()*12)
 document.getElementById("quote").innerHTML = quotes[index].quote;
 document.getElementById("cite").innerHTML = quotes[index].author;
 document.getElementById("intro").style.top= quotes[index].boxy;
 document.getElementById("intro").style.left=quotes[index].boxx;
-// document.getElementById('image').style.background = "url(quotes[index].image) no-repeat center center";
+document.body.style.backgroundImage="url('cines/" + quotes[index].image + "')";
 
 </script>
 
