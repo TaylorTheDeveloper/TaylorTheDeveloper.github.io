@@ -26,6 +26,10 @@
 </html>
 
 <script>
+//Refresh every 8 seconds
+setTimeout(function(){
+    window.location.reload(1);
+}, 8000);
 
 
 var index= Math.floor(Math.random()*quotes.length);
@@ -33,6 +37,7 @@ var other= Math.floor(Math.random()*images.length);
 //Load Quote Data
 document.getElementById("quote").innerHTML = quotes[index].quote;
 document.getElementById("cite").innerHTML = quotes[index].author;
+
 //If 
 if(quotes[index].overrideImage == "true"){
 document.getElementById("intro").style.top= quotes[index].boxy;
@@ -40,6 +45,7 @@ document.getElementById("intro").style.left=quotes[index].boxx;
 document.body.style.backgroundImage="url('cines/" + quotes[index].image + "')";
 }
 else{
+
 document.getElementById("intro").style.top= images[other].boxy;
 document.getElementById("intro").style.left=images[other].boxx;
 document.body.style.backgroundImage="url('cines/" + images[other].image + "')";
