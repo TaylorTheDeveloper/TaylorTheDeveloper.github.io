@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="intro">
+<blockquote>
+  <p><div id="quote"></div> </p>
+</blockquote>
+<cite><div id="cite"></div></cite>
+  <div id="countdown"></div>
+</div>
+<div class="image"></div>
+<!-- <div class="ribbon">
+  <a href="#">Quotetasic</a>
+</div> -->
+
+
+</body>
+</html>
+<!-- <div id="result" style="color:red"></div> -->
+<script>
+
+
+var getJSON = function(url) {
+  return new Promise(function(resolve, reject) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('get', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      var status = xhr.status;
+      if (status == 200) {
+        resolve(xhr.response);
+      } else {
+        reject(status);
+      }
+    };
+    xhr.send();
+  });
+};
+
+getJSON('http://api.icndb.com/jokes/random').then(function(data) {
+    //alert('Your Json result is:  ' + data.value.joke); //you can comment this, i used it to debug
+
+    intro.innerText = data.value.joke; //display the result in an HTML element
+}, function(status) { //error detection....
+  //alert('Something went wrong.');
+});
+
+
+
+//Refresh every 8 seconds
+setTimeout(function(){
+    window.location.reload(1);
+}, 7000);
+
+// loadData('http://api.icndb.com/jokes/random',
+//     function(data){console.log(data);},
+//     function(xhr){console.log(xhr);})
+
+//Load Quote Data
+// document.getElementById("quote").innerHTML = quotes[index].quote;
+// //document.getElementById("cite").innerHTML = quotes[index].author;
+
+// document.getElementById("intro").style.top= quotes[index].boxy;
+// document.getElementById("intro").style.left=quotes[index].boxx;
+// document.body.style.backgroundImage="url('cines/" + quotes[index].image + "')";
+
+
+
+</script>
+
