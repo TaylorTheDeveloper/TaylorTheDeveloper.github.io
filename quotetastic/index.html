@@ -30,7 +30,12 @@
 // setTimeout(function(){
 //     window.location.reload(1);
 // }, 8000);
-	
+//IF mobile
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ // some code..
+ document.write(<p> Mobile </p>);
+}
+else{
 setInterval(function(){
 	var index= Math.floor(Math.random()*quotes.length);
 	var other= Math.floor(Math.random()*images.length);
@@ -52,6 +57,7 @@ setInterval(function(){
 	document.body.style.backgroundImage="url('cines/" + images[other].image + "')";
 	}
 }, 5000);
+}
 
 
 
