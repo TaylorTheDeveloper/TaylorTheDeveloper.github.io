@@ -26,16 +26,6 @@
 </html>
 
 <script>
-//Refresh every 8 seconds
-// setTimeout(function(){
-//     window.location.reload(1);
-// }, 8000);
-//IF mobile
-var windowWidth = window.screen.width < window.outerWidth ?
-                  window.screen.width : window.outerWidth;
-var mobile = windowWidth < 500;
-
-if(!mobile){
 setInterval(function(){
 	var index= Math.floor(Math.random()*quotes.length);
 	var other= Math.floor(Math.random()*images.length);
@@ -57,10 +47,5 @@ setInterval(function(){
 	document.body.style.backgroundImage="url('cines/" + images[other].image + "')";
 	}
 }, 5000);
-}
-
-
-
-
 </script>
 
