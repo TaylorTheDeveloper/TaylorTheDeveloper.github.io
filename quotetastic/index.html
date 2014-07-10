@@ -26,26 +26,43 @@
 </html>
 
 <script>
-setInterval(function(){
-	var index= Math.floor(Math.random()*quotes.length);
-	var other= Math.floor(Math.random()*images.length);
-	//Load Quote Data
-	document.getElementById("quote").innerHTML = quotes[index].quote;
-	document.getElementById("cite").innerHTML = quotes[index].author;
+function testSlider(quote,image){
+	//Test Newly Added Slider
+	if(typeof(quote)==='undefined') quote = quotes[quotes.length-1];
+   	if(typeof(image)==='undefined') image = images[images.length-1];
+	document.getElementById("quote").innerHTML = quote.quote;
+	document.getElementById("cite").innerHTML = quote.author;
+	document.getElementById("intro").style.top = image.boxy;
+	document.getElementById("intro").style.left = image.boxx;	
+	document.body.style.backgroundImage="url('cines/" + image.image + "')";
+}
 
-	//If override is active
-	if(quotes[index].overrideImage == "true"){
-	document.getElementById("intro").style.top = quotes[index].boxy;
-	document.getElementById("intro").style.left = quotes[index].boxx;
-	//document.getElementById("image").style.left = "url('cines/" + quotes[index].image + "')";
-	document.body.style.backgroundImage="url('cines/" + quotes[index].image + "')";
-	}
-	else{
-	document.getElementById("intro").style.top = images[other].boxy;
-	document.getElementById("intro").style.left = images[other].boxx;
-	//document.getElementById("image").style.left = "url('cines/" + images[other].image + "')";
-	document.body.style.backgroundImage="url('cines/" + images[other].image + "')";
-	}
-}, 5000);
+testSlider();
+
+// setInterval(function(){
+// 	var index= Math.floor(Math.random()*quotes.length);
+// 	var other= Math.floor(Math.random()*images.length);
+// 	//Load Quote Data
+// 	document.getElementById("quote").innerHTML = quotes[index].quote;
+// 	document.getElementById("cite").innerHTML = quotes[index].author;
+
+
+
+// 	//If override is active
+// 	if(quotes[index].overrideImage == "true"){
+// 	document.getElementById("intro").style.top = quotes[index].boxy;
+// 	document.getElementById("intro").style.left = quotes[index].boxx;
+// 	//document.getElementById("image").style.left = "url('cines/" + quotes[index].image + "')";
+// 	document.body.style.backgroundImage="url('cines/" + quotes[index].image + "')";
+// 	}
+// 	else{
+// 		isRestrictedImage(images,other);
+// 	document.getElementById("intro").style.top = images[other].boxy;
+// 	document.getElementById("intro").style.left = images[other].boxx;
+// 	//document.getElementById("image").style.left = "url('cines/" + images[other].image + "')";
+// 	document.body.style.backgroundImage="url('cines/" + images[other].image + "')";
+// 	}
+// }, 5000);
+
 </script>
 

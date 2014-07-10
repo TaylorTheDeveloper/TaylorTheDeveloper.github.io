@@ -51,4 +51,20 @@ var images = [{
     "boxx" : "5%",
     "boxy" : "15%",
     "image" : "sparks.gif"
+},{
+    "boxx" : "25%",
+    "boxy" : "30%",
+    "image" : "canyon.gif"
+},{
+    "boxx" : "2.5%",
+    "boxy" : "10%",
+    "image" : "halloween.gif"
+},{
+    "boxx" : "2.5%",
+    "boxy" : "10%",
+    "image" : "icyrain.gif"
+},{
+    "boxx" : "28%",
+    "boxy" : "32%",
+    "image" : "worldofdreams.gif"
 }];

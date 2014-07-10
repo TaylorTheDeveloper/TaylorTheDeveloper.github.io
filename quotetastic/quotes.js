@@ -30,7 +30,7 @@ var quotes = [{
 },{
     "quote" : "I'm just a musical prostitute, my dear.",
     "author" : "Freddie Mercury",
-    "overrideImage" : "false",
+    "overrideImage" : "true",
     "boxx" : "2%",
     "boxy" : "40%",
     "image" : "bicycle.gif"
@@ -86,6 +86,41 @@ var quotes = [{
 },{
     "quote" : "If you realized how powerful your thoughts are, you would never think a negative thought.",
     "author" : "P. Pilgrim",
+    "overrideImage" : "false",
+    "boxx" : "5%",
+    "boxy" : "15%",
+    "image" : "sparks.gif"
+},{
+    "quote" : "In the end, only three things matter: How much you loved, how gently you lived, and how gracefully you let go of things not meant for you.",
+    "author" : "Buddhist Saying",
+    "overrideImage" : "false",
+    "boxx" : "5%",
+    "boxy" : "15%",
+    "image" : "sparks.gif"
+},{
+    "quote" : "How did I escape? With difficulty. How did I plan this moment? With pleasure.",
+    "author" : "Alexandre Dumas",
+    "overrideImage" : "true",
+    "boxx" : "2.5%",
+    "boxy" : "10%",
+    "image" : "halloween.gif"
+},{
+    "quote" : "Most folks are as happy as they make up their minds to be.",
+    "author" : "Abraham Lincoln",
+    "overrideImage" : "false",
+    "boxx" : "5%",
+    "boxy" : "15%",
+    "image" : "sparks.gif"
+},{
+    "quote" : "Insanity: doing the same thing over and over again and expecting different results.",
+    "author" : "Albert Einstein",
+    "overrideImage" : "false",
+    "boxx" : "5%",
+    "boxy" : "15%",
+    "image" : "sparks.gif"
+},{
+    "quote" : "Insanity: doing the same thing over and over again and expecting different results.",
+    "author" : "Albert Einstein",
     "overrideImage" : "false",
     "boxx" : "5%",
     "boxy" : "15%",
