@@ -37,32 +37,32 @@ function testSlider(quote,image){
 	document.body.style.backgroundImage="url('cines/" + image.image + "')";
 }
 
-testSlider();
+//testSlider();
 
-// setInterval(function(){
-// 	var index= Math.floor(Math.random()*quotes.length);
-// 	var other= Math.floor(Math.random()*images.length);
-// 	//Load Quote Data
-// 	document.getElementById("quote").innerHTML = quotes[index].quote;
-// 	document.getElementById("cite").innerHTML = quotes[index].author;
+setInterval(function(){
+	var index= Math.floor(Math.random()*quotes.length);
+	var other= Math.floor(Math.random()*images.length);
+	//Load Quote Data
+	document.getElementById("quote").innerHTML = quotes[index].quote;
+	document.getElementById("cite").innerHTML = quotes[index].author;
 
 
 
-// 	//If override is active
-// 	if(quotes[index].overrideImage == "true"){
-// 	document.getElementById("intro").style.top = quotes[index].boxy;
-// 	document.getElementById("intro").style.left = quotes[index].boxx;
-// 	//document.getElementById("image").style.left = "url('cines/" + quotes[index].image + "')";
-// 	document.body.style.backgroundImage="url('cines/" + quotes[index].image + "')";
-// 	}
-// 	else{
-// 		isRestrictedImage(images,other);
-// 	document.getElementById("intro").style.top = images[other].boxy;
-// 	document.getElementById("intro").style.left = images[other].boxx;
-// 	//document.getElementById("image").style.left = "url('cines/" + images[other].image + "')";
-// 	document.body.style.backgroundImage="url('cines/" + images[other].image + "')";
-// 	}
-// }, 5000);
+	//If override is active
+	if(quotes[index].overrideImage == "true"){
+	document.getElementById("intro").style.top = quotes[index].boxy;
+	document.getElementById("intro").style.left = quotes[index].boxx;
+	//document.getElementById("image").style.left = "url('cines/" + quotes[index].image + "')";
+	document.body.style.backgroundImage="url('cines/" + quotes[index].image + "')";
+	}
+	else{
+		isRestrictedImage(images,other);
+	document.getElementById("intro").style.top = images[other].boxy;
+	document.getElementById("intro").style.left = images[other].boxx;
+	//document.getElementById("image").style.left = "url('cines/" + images[other].image + "')";
+	document.body.style.backgroundImage="url('cines/" + images[other].image + "')";
+	}
+}, 5000);
 
 </script>
 
