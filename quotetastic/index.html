@@ -11,10 +11,10 @@
 
 <div id="intro">
 <blockquote>
-  <p><div id="quote"></div> </p>
+  <p><div id="quote">Quotetastic</div> </p>
 </blockquote>
 <cite><div id="cite"></div></cite>
-  <div id="countdown"></div>
+  
 </div>
 <div class="image"></div>
 <!-- <div class="ribbon">
@@ -30,6 +30,7 @@
 // setTimeout(function(){
 //     window.location.reload(1);
 // }, 8000);
+	
 setInterval(function(){
 	var index= Math.floor(Math.random()*quotes.length);
 	var other= Math.floor(Math.random()*images.length);
@@ -39,15 +40,17 @@ setInterval(function(){
 
 	//If override is active
 	if(quotes[index].overrideImage == "true"){
-	document.getElementById("intro").style.top= quotes[index].boxy;
-	document.getElementById("intro").style.left=quotes[index].boxx;
+	document.getElementById("intro").style.top = quotes[index].boxy;
+	document.getElementById("intro").style.left = quotes[index].boxx;
+	//document.getElementById("image").style.left = "url('cines/" + quotes[index].image + "')";
 	document.body.style.backgroundImage="url('cines/" + quotes[index].image + "')";
 	}
 	else{
-	document.getElementById("intro").style.top= images[other].boxy;
-	document.getElementById("intro").style.left=images[other].boxx;
+	document.getElementById("intro").style.top = images[other].boxy;
+	document.getElementById("intro").style.left = images[other].boxx;
+	//document.getElementById("image").style.left = "url('cines/" + images[other].image + "')";
 	document.body.style.backgroundImage="url('cines/" + images[other].image + "')";
-}
+	}
 }, 5000);
 
 
