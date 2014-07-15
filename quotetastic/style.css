@@ -6,9 +6,11 @@
   transition:all 0.5s;
   font-family:Roboto;
 }
-body {
+body {  
+  top:0px;
+  left:0px;
   height:100%;
-  width:100%;
+  width:100%;  
   margin:50%;
   background: url('cines/waterrefelctions.gif') no-repeat center center;
   -webkit-background-size: cover;
@@ -72,7 +74,7 @@ cite{
     waterfaucet.gif
     waterrefelctions.gif
     */
-/*  background: url('cines/waterrefelctions.gif') no-repeat center center;
+/*      background: url('cines/waterrefelctions.gif') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

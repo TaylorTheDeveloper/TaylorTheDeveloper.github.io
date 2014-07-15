@@ -5,18 +5,24 @@
 
 <script type="text/javascript" src="quotes.js"></script>
 <script type="text/javascript" src="images.js"></script>
+
 </head>
 
 <body>
 
 <div id="intro">
 <blockquote>
-  <p><div id="quote"></div> </p>
+  <p><div id="quote">Quotetastic</div> </p>
 </blockquote>
+
 <cite><div id="cite"></div></cite>
-  <div id="countdown"></div>
-</div>
-<div class="image"></div>
+
+
+</div><!-- END INTRO -->
+
+<div class="image"><audio controls>
+	<source src="tchaikovsky.mp3" type="audio/mpeg">
+</audio></div>
 <!-- <div class="ribbon">
   <a href="#">Quotetasic</a>
 </div> -->
@@ -26,31 +32,43 @@
 </html>
 
 <script>
-//Refresh every 8 seconds
-setTimeout(function(){
-    window.location.reload(1);
-}, 8000);
-
-
-var index= Math.floor(Math.random()*quotes.length);
-var other= Math.floor(Math.random()*images.length);
-//Load Quote Data
-document.getElementById("quote").innerHTML = quotes[index].quote;
-document.getElementById("cite").innerHTML = quotes[index].author;
-
-//If 
-if(quotes[index].overrideImage == "true"){
-document.getElementById("intro").style.top= quotes[index].boxy;
-document.getElementById("intro").style.left=quotes[index].boxx;
-document.body.style.backgroundImage="url('cines/" + quotes[index].image + "')";
-}
-else{
-
-document.getElementById("intro").style.top= images[other].boxy;
-document.getElementById("intro").style.left=images[other].boxx;
-document.body.style.backgroundImage="url('cines/" + images[other].image + "')";
+function testSlider(quote,image){
+	//Test Newly Added Slider
+	if(typeof(quote)==='undefined') quote = quotes[quotes.length-1];
+   	if(typeof(image)==='undefined') image = images[images.length-1];
+	document.getElementById("quote").innerHTML = quote.quote;
+	document.getElementById("cite").innerHTML = quote.author;
+	document.getElementById("intro").style.top = image.boxy;
+	document.getElementById("intro").style.left = image.boxx;	
+	document.body.style.backgroundImage="url('cines/" + image.image + "')";
 }
 
+//testSlider();
+
+setInterval(function(){
+	var index= Math.floor(Math.random()*quotes.length);
+	var other= Math.floor(Math.random()*images.length);
+	//Load Quote Data
+	document.getElementById("quote").innerHTML = quotes[index].quote;
+	document.getElementById("cite").innerHTML = quotes[index].author;
+
+
+
+	//If override is active
+	if(quotes[index].overrideImage == "true"){
+	document.getElementById("intro").style.top = quotes[index].boxy;
+	document.getElementById("intro").style.left = quotes[index].boxx;
+	//document.getElementById("image").style.left = "url('cines/" + quotes[index].image + "')";
+	document.body.style.backgroundImage="url('cines/" + quotes[index].image + "')";
+	}
+	else{
+
+	document.getElementById("intro").style.top = images[other].boxy;
+	document.getElementById("intro").style.left = images[other].boxx;
+	//document.getElementById("image").style.left = "url('cines/" + images[other].image + "')";
+	document.body.style.backgroundImage="url('cines/" + images[other].image + "')";
+	}
+}, 5000);
 
 </script>
 
