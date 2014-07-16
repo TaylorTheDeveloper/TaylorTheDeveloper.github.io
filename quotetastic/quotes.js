@@ -125,4 +125,11 @@ var quotes = [{
     "boxx" : "5%",
     "boxy" : "15%",
     "image" : "sparks.gif"
+},{
+    "quote" : "I think that's the single best piece of advice: constantly think about how you could be doing things better and questioning yourself.",
+    "author" : "Elon Musk",
+    "overrideImage" : "false",
+    "boxx" : "5%",
+    "boxy" : "15%",
+    "image" : "sparks.gif"
 }];
