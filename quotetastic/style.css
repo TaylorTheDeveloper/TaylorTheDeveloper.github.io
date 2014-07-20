@@ -11,12 +11,17 @@ body {
   left:0px;
   height:100%;
   width:100%;  
-  margin:50%;
-  background: url('cines/waterrefelctions.gif') no-repeat center center;
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  /* OLD */
+/*  background: url('cines/fightclub_01.gif') no-repeat center center fixed;*/
+/*  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
   z-index:-1;
   opacity:1;
 }
@@ -29,8 +34,15 @@ cite{
   top:0px;
   left:0px;
   width:100%;
-  height:100%;
-    /*background: url("http://lorempixel.com/1600/1200/nature/") no-repeat center center; */
+  height:100%;   
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index:-1;
+  opacity:1;
+/*      background: url("http://lorempixel.com/1600/1200/nature/") ; */
     /*
     beer.gif
     blahblahblah.gif
@@ -74,13 +86,7 @@ cite{
     waterfaucet.gif
     waterrefelctions.gif
     */
-/*      background: url('cines/waterrefelctions.gif') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index:-1;
-  opacity:1;*/
+/*      background: url('cines/fightclub_01.gif')no-repeat;*/
   /*Blur - good for some images*/
 /*  -webkit-filter: blur(10px);
   -moz-filter: blur(10px);

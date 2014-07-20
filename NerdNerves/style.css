@@ -18,50 +18,8 @@ body {
   width:100%;
   height:100%;
     /*background: url("http://lorempixel.com/1600/1200/nature/") no-repeat center center; */
-    /*
-    beer.gif
-    blahblahblah.gif
-    bicycle.gif
-    canyon.gif
-    city-night.gif
-    crystalball.gif
-    coolingoff.gif
-    cat_0001.gif
-    chicago.gif
-    cigars.gif
-    espresso.gif
-    flower_focus.gif
-    forest-river.gif
-    gitbooze.gif
-    girl_hammock.gif
-    hellobeautiful.gif
-    gardenstate.gif
-    hotspring.gif
-    icyrain.gif
-    inception_movieposters.gif
-    intherain.gif
-    jurasic park.gif
-    keyandpeel.gif
-    nacholibre.gif
-    oldspice_power.gif
-    rain.gif
-    reflections_001.gif
-    reflections_002.gif
-    romantic_bank.gif
-    scenicpool.gif
-    shootingstar.gif
-    singlebird.gif
-    skrim_docks.gif
-    sparks.gif
-    subway.gif
-    sunset-beachrocks.gif
-    train_001.gif
-    umbrella.gif
-    waterfall.gif
-    waterfaucet.gif
-    waterrefelctions.gif
-    */
-  background: url('cines/sunset-beachrocks.gif') no-repeat center center;
+    
+  background: url('cines/romantic_bank.gif') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -69,10 +27,11 @@ body {
   z-index:-1;
   opacity:1;
   -webkit-animation: imageIntro 3s;
+
 }
 #intro {
   position:fixed;
-  top:16%;
+  top:50%;
   left:25%;
   width:750px;
   font-weight: bold;

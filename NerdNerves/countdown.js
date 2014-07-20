@@ -16,7 +16,7 @@
             if (distance < 0) {
 
                 clearInterval(timer);
-                document.getElementById(id).innerHTML = 'EXPIRED!';
+                document.getElementById(id).innerHTML = 'TOGETHER AT LAST!!!';
 
                 return;
             }
