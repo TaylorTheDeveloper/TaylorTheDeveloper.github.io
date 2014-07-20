@@ -13,7 +13,7 @@
 
 <div id="image">
 
-<div id="intro">
+<div id="quoteblock">
 <blockquote><div id="quote">Quotetastic</div></blockquote>
 <cite><div id="cite">a work in progress</div></cite>
 </div><!-- END INTRO -->
@@ -35,9 +35,9 @@ function testSlider(quote,image){
 	if(typeof(quote)==='undefined') quote = quotes[quotes.length-1];
    	if(typeof(image)==='undefined') image = images[images.length-1];
 	document.getElementById("quote").innerHTML = quote.quote;
-	document.getElementById("cite").innerHTML = quote.author;
-	document.getElementById("intro").style.top = //image.boxy;
-	document.getElementById("intro").style.left = image.boxx;	
+	document.getElementById("cite").innerHTML = "- "+quote.author;
+	document.getElementById("quoteblock").style.top = image.boxy;
+	document.getElementById("quoteblock").style.left = image.boxx;	
 	document.body.style.backgroundImage="url('cines/" + image.image + "')";
 }
 
@@ -48,22 +48,22 @@ setInterval(function(){
 	var other= Math.floor(Math.random()*images.length);
 	//Load Quote Data
 	document.getElementById("quote").innerHTML = quotes[index].quote;
-	document.getElementById("cite").innerHTML = quotes[index].author;
+	document.getElementById("cite").innerHTML = "- "+quotes[index].author;
 
 
 
 	//If override is active
 	if(quotes[index].overrideImage == "true"){
-	document.getElementById("intro").style.top = quotes[index].boxy;
-	document.getElementById("intro").style.left = quotes[index].boxx;
+	document.getElementById("quoteblock").style.top = quotes[index].boxy;
+	document.getElementById("quoteblock").style.left = quotes[index].boxx;
 	//document.getElementById("image").style.background = "url('cines/" + quotes[index].image + "')";
 	//document.getElementsByClassName("image").style.background = "url('cines/" + quotes[index].image + "')";
 	document.body.style.backgroundImage="url('cines/" + quotes[index].image + "')";
 	}
 	else{
 
-	document.getElementById("intro").style.top = images[other].boxy;
-	document.getElementById("intro").style.left = images[other].boxx;
+	document.getElementById("quoteblock").style.top = images[other].boxy;
+	document.getElementById("quoteblock").style.left = images[other].boxx;
 	//document.getElementById("image").style.background = "url('cines/" + images[other].image + "')";
 	//document.getElementsByClassName("image").style.background = "url('cines/" + images[other].image + "')";
 	document.body.style.backgroundImage="url('cines/" + images[other].image + "')";
