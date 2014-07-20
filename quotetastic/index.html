@@ -10,22 +10,20 @@
 
 <body>
 
+
+<div id="image">
+
 <div id="intro">
-<blockquote>
-  <p><div id="quote">Quotetastic</div> </p>
-</blockquote>
-
-<cite><div id="cite"></div></cite>
-
-
+<blockquote><div id="quote">Quotetastic</div></blockquote>
+<cite><div id="cite">a work in progress</div></cite>
 </div><!-- END INTRO -->
 
-<div id="image"><!-- <audio controls>
-	<source src="tchaikovsky.mp3" type="audio/mpeg">
-</audio> --></div>
-<!-- <div class="ribbon">
-  <a href="#">Quotetasic</a>
-</div> -->
+
+	<audio autoplay loop>
+		<source src="tchaikovsky.mp3" type="audio/mpeg">
+	</audio>
+
+</div>
 
 
 </body>
@@ -38,7 +36,7 @@ function testSlider(quote,image){
    	if(typeof(image)==='undefined') image = images[images.length-1];
 	document.getElementById("quote").innerHTML = quote.quote;
 	document.getElementById("cite").innerHTML = quote.author;
-	document.getElementById("intro").style.top = image.boxy;
+	document.getElementById("intro").style.top = //image.boxy;
 	document.getElementById("intro").style.left = image.boxx;	
 	document.body.style.backgroundImage="url('cines/" + image.image + "')";
 }

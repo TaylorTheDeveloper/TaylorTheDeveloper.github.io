@@ -10,24 +10,27 @@ body {
   top:0px;
   left:0px;
   height:100%;
-  width:100%;  
-  background-repeat: no-repeat;
+  width:100%; 
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;   
+  background-repeat: no-repeat; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   /* OLD */
 /*  background: url('cines/fightclub_01.gif') no-repeat center center fixed;*/
-/*  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
   z-index:-1;
   opacity:1;
 }
 cite{
-  font-size: .8em;
+  font-size: .7em;
   float: right;
+}
+audio{
+  width: 300px;
+  margin: 0 auto;
 }
 #image {
   position:fixed;
@@ -46,7 +49,43 @@ cite{
   z-index:-1;
   opacity:1;
 /*      background: url("http://lorempixel.com/1600/1200/nature/") ; */
+/*      background: url('cines/fightclub_01.gif')no-repeat;*/
+  /*Blur - good for some images*/
+/*  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);*/
+}
+#intro {
+  position:fixed;
+  top:40%;
+  left:25%;
+  width:750px;
+  font-weight: bold;
+/*  margin: auto;*/
+/*  margin-top:-40px;*/
+  padding: 10px;
+  text-align:center;
+  color:#ffffff;
+  background-color: rgba(35,35,35, .4);
+  font-size:40px;
+  font-weight:100;
+}
+
+.footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  color:#ffffff;
+  font-size:12px;
+}
+.footer a {
+  color:#ffffff;
+}
+
     /*
+    Some Images
     beer.gif
     blahblahblah.gif
     bicycle.gif
@@ -89,55 +128,3 @@ cite{
     waterfaucet.gif
     waterrefelctions.gif
     */
-/*      background: url('cines/fightclub_01.gif')no-repeat;*/
-  /*Blur - good for some images*/
-/*  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
-  filter: blur(10px);*/
-}
-#intro {
-  position:fixed;
-  top:40%;
-  left:25%;
-  width:750px;
-  font-weight: bold;
-  margin: auto;
-  margin-top:-40px;
-  padding: 10px;
-  text-align:center;
-  color:#ffffff;
-  background-color: rgba(35,35,35, .4);
-  font-size:40px;
-  font-weight:100;
-}
-.footer {
-  position:fixed;
-  bottom:0px;
-  left:0px;
-  color:#ffffff;
-  font-size:12px;
-}
-.footer a {
-  color:#ffffff;
-}
-/*.ribbon {
-  overflow: hidden;
-  white-space: nowrap;
-  position: absolute;
-  opacity:.5;
-  left: 10px;
-  top: 10px;
-
-}
-.ribbon a {
-  border: 1px solid #faa;
-  color: #fff;
-  display: block;
-  font: bold 100% 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin: 1px 0;
-  padding: 10px 50px;
-  text-align: center;
-  text-decoration: none;
-}*/
