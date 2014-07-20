@@ -23,7 +23,7 @@ var quotes = [{
 },{
     "quote" : "The scientific man does not aim at an immediate result. He does not expect that his advanced ideas will be readily taken up. His work is like that of the planter - for the future. His duty is to lay the foundation for those who are to come, and point the way.",
     "author" : "Nikola Tesla",
-    "overrideImage" : "true",
+    "overrideImage" : "false",
     "boxx" : "48%",
     "boxy" : "20%",
     "image" : "shootingstar.gif"

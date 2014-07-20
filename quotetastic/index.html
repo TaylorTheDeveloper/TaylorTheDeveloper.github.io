@@ -40,9 +40,7 @@ function testSlider(quote,image){
 	document.getElementById("quoteblock").style.left = image.boxx;	
 	document.body.style.backgroundImage="url('cines/" + image.image + "')";
 }
-
 //testSlider();
-
 setInterval(function(){
 	var index= Math.floor(Math.random()*quotes.length);
 	var other= Math.floor(Math.random()*images.length);
@@ -56,7 +54,7 @@ setInterval(function(){
 	if(quotes[index].overrideImage == "true"){
 	document.getElementById("quoteblock").style.top = quotes[index].boxy;
 	document.getElementById("quoteblock").style.left = quotes[index].boxx;
-	//document.getElementById("image").style.background = "url('cines/" + quotes[index].image + "')";
+	//document.getElementById("image").style.background = "url('cines/" + quotes[index].image + "') no-repeat";
 	//document.getElementsByClassName("image").style.background = "url('cines/" + quotes[index].image + "')";
 	document.body.style.backgroundImage="url('cines/" + quotes[index].image + "')";
 	}
@@ -64,11 +62,11 @@ setInterval(function(){
 
 	document.getElementById("quoteblock").style.top = images[other].boxy;
 	document.getElementById("quoteblock").style.left = images[other].boxx;
-	//document.getElementById("image").style.background = "url('cines/" + images[other].image + "')";
+	//document.getElementById("image").style.background = "url('cines/" + images[other].image + "') no-repeat";
 	//document.getElementsByClassName("image").style.background = "url('cines/" + images[other].image + "')";
 	document.body.style.backgroundImage="url('cines/" + images[other].image + "')";
 	}
-}, 5000);
+}, 7000);
 
 </script>
 

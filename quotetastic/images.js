@@ -10,11 +10,13 @@ var images = [{
     "boxx" : "3%",
     "boxy" : "10%",
     "image" : "umbrella.gif"
-},{
-    "boxx" : "48%",
-    "boxy" : "20%",
-    "image" : "shootingstar.gif"
-},{
+},
+// {
+//     "boxx" : "48%",
+//     "boxy" : "20%",
+//     "image" : "shootingstar.gif"
+// },
+{
     "boxx" : "2%",
     "boxy" : "40%",
     "image" : "bicycle.gif"
@@ -36,8 +38,8 @@ var images = [{
     "boxy" : "40%",
     "image" : "waterrefelctions.gif"
 },{
-    "boxx" : "50%",
-    "boxy" : "65%",
+    "boxx" : "40%",
+    "boxy" : "55%",
     "image" : "fightclub_01.gif"
 },{
     "boxx" : "25%",
@@ -51,19 +53,23 @@ var images = [{
     "boxx" : "5%",
     "boxy" : "15%",
     "image" : "sparks.gif"
-},{
-    "boxx" : "25%",
-    "boxy" : "30%",
-    "image" : "canyon.gif"
-},{
+},
+// {
+//     "boxx" : "25%",
+//     "boxy" : "30%",
+//     "image" : "canyon.gif"
+// },
+{
     "boxx" : "2.5%",
     "boxy" : "10%",
     "image" : "halloween.gif"
-},{
-    "boxx" : "2.5%",
-    "boxy" : "10%",
-    "image" : "icyrain.gif"
-},{
+},
+// {
+//     "boxx" : "2.5%",
+//     "boxy" : "10%",
+//     "image" : "icyrain.gif"
+// },
+{
     "boxx" : "28%",
     "boxy" : "32%",
     "image" : "worldofdreams.gif"

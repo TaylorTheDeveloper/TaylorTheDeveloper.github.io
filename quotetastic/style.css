@@ -11,6 +11,7 @@ body {
   left:0px;
   height:100%;
   width:100%; 
+  background: #222223;
   -webkit-background-repeat: no-repeat;
   -moz-background-repeat: no-repeat;
   -o-background-repeat: no-repeat;   
@@ -38,6 +39,7 @@ body {
   background-color: rgba(35,35,35, .4);
   font-size:40px;
   font-weight:100;
+
 }
 #quoteblockBackup {
   position:fixed;
@@ -50,7 +52,7 @@ body {
   padding: 10px;
   text-align:center;
   color:#ffffff;
-  background-color: rgba(35,35,35, .4);
+  background-color: rgba(35,35,35, .3);
   font-size:40px;
   font-weight:100;
 }
