@@ -20,7 +20,7 @@
 
 </div><!-- END INTRO -->
 
-<div class="image"><!-- <audio controls>
+<div id="image"><!-- <audio controls>
 	<source src="tchaikovsky.mp3" type="audio/mpeg">
 </audio> --></div>
 <!-- <div class="ribbon">
@@ -58,14 +58,16 @@ setInterval(function(){
 	if(quotes[index].overrideImage == "true"){
 	document.getElementById("intro").style.top = quotes[index].boxy;
 	document.getElementById("intro").style.left = quotes[index].boxx;
-	//document.getElementById("image").style.left = "url('cines/" + quotes[index].image + "')";
+	//document.getElementById("image").style.background = "url('cines/" + quotes[index].image + "')";
+	//document.getElementsByClassName("image").style.background = "url('cines/" + quotes[index].image + "')";
 	document.body.style.backgroundImage="url('cines/" + quotes[index].image + "')";
 	}
 	else{
 
 	document.getElementById("intro").style.top = images[other].boxy;
 	document.getElementById("intro").style.left = images[other].boxx;
-	//document.getElementById("image").style.left = "url('cines/" + images[other].image + "')";
+	//document.getElementById("image").style.background = "url('cines/" + images[other].image + "')";
+	//document.getElementsByClassName("image").style.background = "url('cines/" + images[other].image + "')";
 	document.body.style.backgroundImage="url('cines/" + images[other].image + "')";
 	}
 }, 5000);
