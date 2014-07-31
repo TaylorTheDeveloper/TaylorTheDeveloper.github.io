@@ -25,8 +25,8 @@ angular.module('starter', ['ionic', 'ionic.contrib.ui.cards'])
     { title: 'Mate!', image: 'img/twoshot.png', details:'You and whoever you want drink!(pick one)' },
     { title: 'Alcoholics!', image: 'img/cheers.jpg', details:'Everybody Drinks' },
     { title: 'Take Two Shots!', image: 'img/twoshot.png', details:'' },
-    { title: 'Give Wet Willy!', image: 'img/ear.png', details:'' },
-    { title: 'Get Wet Willy!', image: 'img/ear.png', details:'' },
+    { title: 'Give a Wet Willy!', image: 'img/ear.png', details:'' },
+    { title: 'Get a Wet Willy!', image: 'img/ear.png', details:'' },
     { title: 'Moose!', image: 'img/moose.png', },//details:'Whoever gets this card must immediately put their thumbs to their head with his/her fingers splayed, resembling moose antlers. The last person to do this must drink.' },
     { title: 'Girls Drink!', image: 'img/female.png', details:'' },
     { title: 'Guys Drink!', image: 'img/male.png', details:'' }
@@ -39,6 +39,7 @@ angular.module('starter', ['ionic', 'ionic.contrib.ui.cards'])
   // };
 
   $scope.cardSwiped = function(index){
+      $scope.cards.length = 0;//Removes Excess Cards
       $scope.addCard();
   }
 
