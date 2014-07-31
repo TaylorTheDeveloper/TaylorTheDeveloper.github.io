@@ -1,5 +1,7 @@
 angular.module('starter', ['ionic', 'ionic.contrib.ui.cards'])
 
+
+
 .directive('noScroll', function($document) {
 
   return {
@@ -32,20 +34,58 @@ angular.module('starter', ['ionic', 'ionic.contrib.ui.cards'])
 
   $scope.cards = Array.prototype.slice.call(cardTypes, 0, 0);
 
-  $scope.cardSwiped = function(index) {
+  // $scope.cardSwiped = function(index) {
+  //   $scope.addCard();
+  // };
 
-    $scope.addCard();
-  };
+  $scope.cardSwiped = function(index){
+      $scope.addCard();
+  }
 
   $scope.cardDestroyed = function(index) {
     $scope.cards.splice(index, 1);
   };
 
+  var cardIndexHistory = [];
+
   $scope.addCard = function() {
-    var newCard = cardTypes[Math.floor(Math.random() * cardTypes.length)];
+    var index = Math.floor(Math.random() * cardTypes.length)
+    cardIndexHistory.push(index);
+
+    //Prevent Repeats
+    if(cardIndexHistory.length > 2){
+      var stop = cardIndexHistory -2;
+      var shortHistory=[];
+
+      for(var k = cardIndexHistory.length; k > stop; k-- ){
+        shortHistory.push(cardIndexHistory[k]);
+      }
+
+      if(cardIndexHistory[0]==cardIndexHistory[1]){
+      //Reset index
+      index = Math.floor(Math.random() * cardTypes.length)
+      //If it continues to persist
+        while(index == cardIndexHistory[0]){
+          index = Math.floor(Math.random() * cardTypes.length)
+        }
+      }
+    }
+
+    //To much, dump memory
+    if(cardIndexHistory.length > 40){
+      cardIndexHistory.length = 0;
+    }
+
+    var newCard = cardTypes[index];
     newCard.id = Math.random();
     $scope.cards.push(angular.extend({}, newCard));
   }
+
+  // $scope.addCard = function() {
+  //   var newCard = cardTypes[Math.floor(Math.random() * cardTypes.length)];
+  //   newCard.id = Math.random();
+  //   $scope.cards.push(angular.extend({}, newCard));
+  // }
 })
 
 .controller('CardCtrl', function($scope, $ionicSwipeCardDelegate) {
@@ -67,6 +107,7 @@ function catch_click(e)
         return false;
     }
 }
+
 
 
 
