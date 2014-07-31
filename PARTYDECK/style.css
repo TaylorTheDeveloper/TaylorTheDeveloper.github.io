@@ -53,6 +53,11 @@ body {
   -webkit-animation-fill-mode: forwards;
 }
 
+.bar-calm{
+  color: #d96539 !important;
+  background: #30BD8A !important; 
+}
+
 .swipe-card .title {
   height: 80px;
   padding: 5px;
@@ -62,6 +67,7 @@ body {
   text-shadow: 1px 1px 5px #e59779;
   background: #d9b539;
   border-bottom: 6px solid #39d9b5;
+  z-index:-1;
 }
 .swipe-card .image {
 padding-top: 50%;
