@@ -23,7 +23,11 @@
 
       <swipe-cards>
         <swipe-card on-swipe="cardSwiped()" class="firstCard" id="start-card">
-          Swipe Down<br>VVV<br>VV<br>V<br>PARTYDECK
+          <!-- Swipe Down<br>VVV<br>VV<br>V<br>PARTYDECK -->
+
+            <div class="image">
+          <img src="img/partydeck.png" >
+          </div>
         </swipe-card>
         <swipe-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe="cardSwiped($index)">
 
