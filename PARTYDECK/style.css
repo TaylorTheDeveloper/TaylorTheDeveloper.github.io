@@ -72,8 +72,8 @@ body {
 }
 .swipe-card .image {
 padding-top: 50%;
-color: #eef;
-	background-color: #30BD8A;
+color: #eef;/*
+	background-color: #30BD8A;*/
   padding: 5px;
   overflow: hidden;
   max-height: 350px;
