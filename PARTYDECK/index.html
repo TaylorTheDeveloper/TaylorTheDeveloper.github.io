@@ -19,12 +19,24 @@
   <h1 class="title">PARTY DECK</h1>
 <!-- <button class="button button-energized ">Share</button> -->
 </div>
+
     <ion-pane ng-controller="CardsCtrl">
       <ion-header-bar class="bar-transparent">
         <h1 class="title"></h1>
       </ion-header-bar>
 
       <swipe-cards on-swipe="onSwipe($event)">
+      
+<!-- Static Deck Background -->
+      <swipe-cards>
+        <swipe-card class="firstCard" id="start-card">
+          <!-- Swipe Down<br>VVV<br>VV<br>V<br>PARTYDECK -->
+
+            <div class="image">
+          <img src="img/partydeck.png" >
+          </div>
+        </swipe-card>
+        </swipe-cards>
 
       <swipe-cards>
         <swipe-card on-swipe="cardSwiped()" class="firstCard" id="start-card">
@@ -34,6 +46,7 @@
           <img src="img/partydeck.png" >
           </div>
         </swipe-card>
+
         <swipe-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe="cardSwiped($index)">
 
           <div ng-controller="CardCtrl">
