@@ -7,12 +7,12 @@ var App = angular.module('App', [
  */
 App.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 	$stateProvider
-		.state('menu', {url: "/map", abstract: true, templateUrl: "menu.html"})
+		.state('menu', {url: "/app", abstract: true, templateUrl: "menu.html"})
 		.state('menu.home', {url: '/home', views: {'menuContent': {templateUrl: 'main.html', controller: 'MainCtrl'} }  })
-		.state('menu.help', {url: '/help', views: {'menuContent': {templateUrl: 'helpView.html', controller: 'HelpCtrl'} }  });
+		.state('menu.help', {url: '/help', views: {'menuContent': {templateUrl: 'help.html', controller: 'HelpCtrl'} }  });
 
 	// if none of the above states are matched, use this as the fallback
-	$urlRouterProvider.otherwise('/map/home');
+	$urlRouterProvider.otherwise('/app/home');
 }]);
 
 /**
@@ -30,6 +30,7 @@ App.controller('HeaderCtrl', function($scope) {
 		}
 	];
 });
+
 /**
  * MAIN CONTROLLER - handle inapp browser
  */
@@ -37,16 +38,12 @@ App.controller('MainCtrl', ['$scope', function($scope) {
   // do something
 }]);
 
-
 /**
  * MAIN CONTROLLER - handle inapp browser
  */
 App.controller('HelpCtrl', ['$scope', function($scope) {
   // do something
 }]);
-
-
-
 
 /**
  * Menu item click directive - intercept, hide menu and go to new location
@@ -60,5 +57,3 @@ App.directive('clickMenulink', function() {
         }
     }
 })
-
-

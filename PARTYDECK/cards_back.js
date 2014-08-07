@@ -1,8 +1,5 @@
 angular.module('starter', ['ionic', 'ionic.contrib.ui.cards'])
 
-/**
- * Prevent page scroll
- */ 
 .directive('noScroll', function($document) {
 
   return {
