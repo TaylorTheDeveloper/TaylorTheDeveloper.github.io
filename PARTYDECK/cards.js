@@ -23,6 +23,7 @@ angular.module('starter', ['ionic', 'ionic.contrib.ui.cards'])
     { title: 'Twisted!', image: 'img/reverse.png', details:'Reverse Order of Play!' },
     { title: 'Make a sex noise!', image: 'img/sexnoise.jpg', details:'Last person Drinks!' },
     { title: 'Raise Your Hand!', image: 'img/hands.png', details:'Last person Drinks!' },
+    { title: 'Nose Goes!', image: 'img/nose.png', details:'Last person Drinks!' },
     { title: 'Take a shot!', image: 'img/shot.png', details:'lil\' Jon approves!' },
     { title: 'Rhyme Time!', image: 'img/solo.png', details:''},//details:'You say a word and the person to your right has to say a word that rhymes. This goes around until someone can\'t think of a word. This person must drink. The same word can not be used twice.' },
     { title: 'Mate!', image: 'img/twoshot.png', details:'You and one other person must Drink!' },
