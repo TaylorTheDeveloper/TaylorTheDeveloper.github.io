@@ -100,6 +100,8 @@ angular.module('starter', ['ionic', 'ionic.contrib.ui.cards'])
   };
 });
 
+
+
 //Prevent right click
 function catch_click(e)
 {
