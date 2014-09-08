@@ -107,18 +107,4 @@ function card_menu(){
     d.style.display = 'none'
   }
 }
-//Prevent right click
-function catch_click(e)
-{
-    if (!e) var e = window.event;
 
-    var right_click = (e.which ? (e.which == 3) : (e.button == 2));
-
-    if (right_click)
-    {
-        return false;
-    }
-}
-
-document.onmousedown = catch_click;
-if (document.captureEvents) document.captureEvents(Event.MOUSEDOWN);
