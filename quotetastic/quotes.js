@@ -1,5 +1,16 @@
-
+//How to:
+// overrideImage specifies if it should load a particular cineor not
+//
+//
+//
 var quotes = [{
+    "quote" : "When Students cheat on exams it's because our School System values grades more than Students value learning.",
+    "author" : "Neil Degrasse Tyson",
+    "overrideImage" : "false",
+    "boxx" : "25%",
+    "boxy" : "40%",
+    "image" : "oldspice_power.gif"
+},{
     "quote" : "C'est en faisant n'importe quoi qu'on devient n'importe qui",
     "author" : "Remi Gaillard",
     "overrideImage" : "true",
