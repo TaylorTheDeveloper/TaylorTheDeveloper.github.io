@@ -1,4 +1,4 @@
-   CountDownTimer('06/30/2015 11:30 PM', 'countdown');
+   CountDownTimer('06/30/2015 5:00 PM', 'countdown');
 
     function CountDownTimer(dt, id)
     {
