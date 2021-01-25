@@ -140,7 +140,6 @@
                 },
                     // The function to execute every time S is pressed
                     function () {
-                        //ball.physicsImpostor.setLinearVelocity(new BABYLON.Vector3(0, 0, 10));
                         ball.physicsImpostor.applyImpulse(new BABYLON.Vector3(0, 0, 10), ball.getAbsolutePosition());
                     }
                 ));
