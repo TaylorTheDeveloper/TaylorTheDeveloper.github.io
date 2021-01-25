@@ -40,7 +40,7 @@
    <body>
     <canvas id="renderCanvas" touch-action="none"></canvas> <!-- touch-action="none" for best results from PEP -->
     <script>
-        const gravityVector = new BABYLON.Vector3(0, -9.81, 0);
+        const gravityVector = new BABYLON.Vector3(3, -9.81, 0);
         const physicsPlugin = new BABYLON.CannonJSPlugin();
 
         const floorXY = 100;
@@ -138,7 +138,7 @@
                     trigger:
                         BABYLON.ActionManager.OnKeyUpTrigger, parameter: "s"
                 },
-                    // The function to execute every time C is pressed
+                    // The function to execute every time S is pressed
                     function () {
                         //ball.physicsImpostor.setLinearVelocity(new BABYLON.Vector3(0, 0, 10));
                         ball.physicsImpostor.applyImpulse(new BABYLON.Vector3(0, 0, 10), ball.getAbsolutePosition());
