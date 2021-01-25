@@ -111,14 +111,12 @@
             scene.activeCamera = camera;
 
             const light = createLight(scene);
-            //const floor = createFloor(scene, floorXY, floorXY);
+
             const lane = createLane(scene);
-            lane.physicsImpostor = new BABYLON.PhysicsImpostor(lane, BABYLON.PhysicsImpostor.BoxImpostor, { mass: 0, restitution: 0.9 }, scene);
 
             const pins = createPins(scene);
 
             const ball = createBowlingBall(scene);
-            ball.physicsImpostor = new BABYLON.PhysicsImpostor(ball, BABYLON.PhysicsImpostor.SphereImpostor, { mass: 1, restitution: 0.9 }, scene);
 
             // If the action manager wasn't initialized, create a new one
             scene.actionManager = new BABYLON.ActionManager(scene);
@@ -174,6 +172,9 @@
             lane.position.y = laneHeight / 2; // New position due to mesh centering
             lane.position.z = totalLaneLength / 2;
             lane.material = wood;
+
+            lane.physicsImpostor = new BABYLON.PhysicsImpostor(lane, BABYLON.PhysicsImpostor.BoxImpostor, { mass: 0, restitution: 0.9 }, scene);
+
             return lane;
         }
 
@@ -212,6 +213,9 @@
             var ball = sphere;
             ball.position = ballPosition;
             ball.material = marbleMaterial;
+
+            ball.physicsImpostor = new BABYLON.PhysicsImpostor(ball, BABYLON.PhysicsImpostor.SphereImpostor, { mass: 1, restitution: 0.9 }, scene);
+
             return ball;
         }
 
